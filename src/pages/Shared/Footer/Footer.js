@@ -1,9 +1,41 @@
-import React from 'react';
+import React from "react";
+import logo from "../../../assets/logo2.png";
+import "./Footer.css";
 
 const Footer = () => {
     return (
-        <div>
-            <h2>This is footer</h2>
+        <div className="footer ">
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-6">
+                        <div className="logo mt-5">
+                            <img src={logo} className="logo-img" alt="" />
+                            <p className="copyright">Copyright © 2021 Red Onion</p>
+                        </div>
+                    </div>
+
+                    <div className="col-md-6">
+                        <div className="row">
+                            <div className="col-md-6">
+                                <ul className="links">
+                                    <li>About online food</li>
+                                    <li>Read our Blog</li>
+                                    <li>Sign up to deliver</li>
+                                    <li>Add your restaurant</li>
+                                </ul>
+                            </div>
+
+                            <div className="col-md-6">
+                                <ul className="links">
+                                    <li>Get help</li>
+                                    <li>Read FAQs</li>
+                                    <li>View all cities</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
