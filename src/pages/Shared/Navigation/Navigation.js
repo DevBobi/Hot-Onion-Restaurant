@@ -39,7 +39,7 @@ const Navigation = () => {
                                     >Log Out</Button>
                                 </Nav.Link>
                                 :
-                                <Nav.Link as={Link} to="/login#login" className="fw-bolder px-3"><Button variant="danger"
+                                <Nav.Link as={Link} to="/login#login" className="fw-bolder "><Button variant="danger"
                                     className=" rounded-pill px-4 ms-3"
                                 >Log In</Button>
                                 </Nav.Link>}
@@ -48,8 +48,6 @@ const Navigation = () => {
                                 <img id="logo" className="rounded-circle border mx-2 user-logo p-1" alt="Logo" src={user?.photoURL} />
 
                             }
-
-
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

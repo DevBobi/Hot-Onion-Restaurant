@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import AuthProvider from './Contexts/AuthProvider';
-import Booking from './pages/Booking/Booking';
 import CategoryDetail from './pages/Home/CategoryDetail/CategoryDetail';
 import Home from './pages/Home/Home/Home';
 import Login from './pages/Login/Login/Login';
+import PrivateRoute from './pages/Login/PrivateRoute/PrivateRoute';
 import NotFound from './pages/NotFound/NotFound';
 import Footer from './pages/Shared/Footer/Footer';
 import Navigation from './pages/Shared/Navigation/Navigation';
@@ -25,9 +25,9 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
-            <Route path="/:category/:catId">
+            <PrivateRoute path="/:category/:catId">
               <CategoryDetail></CategoryDetail>
-            </Route>
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>

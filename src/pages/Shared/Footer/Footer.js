@@ -1,42 +1,21 @@
 import React from "react";
-import logo from "../../../assets/logo2.png";
+import logo from "../../../assets/logo.png";
 import "./Footer.css";
 
 const Footer = () => {
     return (
-        <div className="footer ">
-            <div className="container">
-                <div className="row">
-                    <div className="col-md-6">
-                        <div className="logo mt-5">
-                            <img src={logo} className="logo-img" alt="" />
-                            <p className="copyright">Copyright © 2021 Red Onion</p>
-                        </div>
-                    </div>
-
-                    <div className="col-md-6">
-                        <div className="row">
-                            <div className="col-md-6">
-                                <ul className="links">
-                                    <li>About online food</li>
-                                    <li>Read our Blog</li>
-                                    <li>Sign up to deliver</li>
-                                    <li>Add your restaurant</li>
-                                </ul>
-                            </div>
-
-                            <div className="col-md-6">
-                                <ul className="links">
-                                    <li>Get help</li>
-                                    <li>Read FAQs</li>
-                                    <li>View all cities</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div className="footer bg-dark row">
+            <div className="p-5 col-md-6">
+                <img src={logo} className="logo-img img-fluid w-25" alt="" />
+                <p className="text-opacity-25 text-light pt-4"><small>© RED-ONION - 2025</small></p>
+            </div>
+            <div className="text-light p-5 col-md-6">
+                <h6>Read our Blog</h6>
+                <h6>Sign up to deliver</h6>
+                <h6>Add your restaurant</h6>
             </div>
         </div>
+
     );
 };
 
